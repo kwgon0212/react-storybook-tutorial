@@ -42,3 +42,21 @@ MainButton.args = {
   size: "medium",
   color: "white",
 };
+
+export const BorderRadiusLargeButton = Template.bind({});
+BorderRadiusLargeButton.args = {
+  label: "BorderRadiusLarge",
+  backgroundColor: "skyblue",
+  size: "medium",
+  borderRadius: "large",
+  color: "white",
+};
+
+export const BorderRadiusSmallButton = Template.bind({});
+BorderRadiusSmallButton.args = {
+  label: "BorderRadiusSmall",
+  backgroundColor: "skyblue",
+  size: "medium",
+  borderRadius: "small",
+  color: "white",
+};

@@ -2,6 +2,7 @@ export interface ButtonProps {
   clickHandler: () => void;
   label: string;
   size: "small" | "medium" | "large";
+  borderRadius: "small" | "medium" | "large";
   backgroundColor: string;
   color: string;
 }
@@ -11,6 +12,7 @@ const Button = ({
   label,
   size = "medium",
   backgroundColor = "red",
+  borderRadius = "medium",
   color,
 }: ButtonProps) => {
   let scale = 1;
@@ -21,7 +23,12 @@ const Button = ({
     backgroundColor: backgroundColor,
     padding: `${scale * 0.5}rem ${scale * 1}rem`,
     border: "none",
-    borderRadius: "0.5rem",
+    borderRadius:
+      borderRadius === "small"
+        ? "0.25rem"
+        : borderRadius === "medium"
+        ? "0.5rem"
+        : "1rem",
     color,
   };
   return (
