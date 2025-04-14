@@ -38,7 +38,7 @@ SmallButton.args = {
 export const MainButton = Template.bind({});
 MainButton.args = {
   label: "Main",
-  backgroundColor: "orange",
+  backgroundColor: "black",
   size: "medium",
   color: "white",
 };
